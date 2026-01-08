@@ -15,3 +15,19 @@ function moveZeros(arr) {
   return arr;
 }
 console.log(moveZeros(arr));
+
+function movezeroswhile(arr) {
+  let i = 0;
+  let j = 0;
+  while (i < arr.length) {
+    if (arr[i] != 0) {
+      let temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+      j++;
+    }
+    i++;
+  }
+  return arr;
+}
+console.log(movezeroswhile(arr));
