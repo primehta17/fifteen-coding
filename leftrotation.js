@@ -4,7 +4,7 @@ let arr = [2, 23, 44, 21, 46];
 // newarr=[21,46,2,23,44];
 function leftroatationone(arr) {
   let first = arr[0];
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length - 1; i++) {
     arr[i] = arr[i + 1]; // newarr.push(arr[i + 1]);
   }
   arr[arr.length - 1] = first;
@@ -13,9 +13,13 @@ function leftroatationone(arr) {
 console.log(leftroatationone(arr));
 
 function leftroatationkth(arr, k) {
+  // if (arr.length % k == 0) {
+  //   return arr;
+  // }
+  k = k % arr.length;
   for (let j = 0; j < k; j++) {
     let first = arr[0];
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length - 1; i++) {
       arr[i] = arr[i + 1];
     }
     arr[arr.length - 1] = first;
@@ -23,4 +27,4 @@ function leftroatationkth(arr, k) {
 
   return arr;
 }
-console.log(leftroatationkth(arr, 3));
+console.log(leftroatationkth(arr, 4));
