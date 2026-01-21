@@ -15,7 +15,7 @@ function leftroatationone(arr) {
 console.log(leftroatationone(arr));
 
 function leftRotationKth(arr, k) {
-  k = k % arr.length;
+  k = k % arr.length; // it will mod the k with length of array
 
   for (let j = 0; j < k; j++) {
     let first = arr[0];

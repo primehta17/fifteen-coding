@@ -5,6 +5,7 @@ function distinct(arr) {
   for (let i = 0; i < arr.length; i++) {
     let index = arr[i];
     if (seen[index] == undefined) {
+      //seen is object and index is its value if it is undefined or empty it will put 1
       seen[index] = 1;
     } else {
       seen[index]++;
