@@ -8,10 +8,12 @@ function reverse(arr) {
 }
 console.log(reverse(arr));
 let j = arr.length - 1;
+let newarray = [];
 while (j >= 0) {
-  console.log(arr[j]);
+  newarray.push(arr[j]);
   j--;
 }
+console.log(newarray);
 
 function twopointerreverse(arr) {
   let i = 0;
