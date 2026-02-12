@@ -1,5 +1,5 @@
 let arr = [2, 3, 44, 21, 3, 21, 3];
-function distinct(arr) {
+function notdistinct(arr) {
   let seen = {};
   let nonduplicate = [];
   for (let i = 0; i < arr.length; i++) {
@@ -18,4 +18,4 @@ function distinct(arr) {
   }
   return nonduplicate;
 }
-console.log(distinct(arr));
+console.log(notdistinct(arr));
